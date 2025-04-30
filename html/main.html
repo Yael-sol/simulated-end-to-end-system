@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calendar</title>
+    <link rel="stylesheet" href="../css/main.css">
+<body>
+
+    <template id="myForm">
+        <span class="big-circle">
+            <span class="inner-circle"></span>
+        </span>
+        <img src="https://i.imgur.com/wcGWHvx.png" class="square" alt="" />
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <div class="infield">
+                        <input type="text" placeholder="Name" id="SignUpName" />
+                        <label></label>
+                    </div>
+                    <div class="infield">
+                        <input type="email" placeholder="Email" name="email" id="SignUpEmail" />
+                        <label></label>
+                    </div>
+                    <div class="infield">
+                        <input type="password" placeholder="Password" id="SignUpPassword" />
+                        <label></label>
+                    </div>
+                    <button id="signUpBtn">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <div class="infield">
+                        <input type="email" placeholder="Email" name="email" id="SignInEmail" />
+                        <label></label>
+                    </div>
+                    <div class="infield">
+                        <input type="password" placeholder="Password" id="SignInPassword" />
+                        <label></label>
+                    </div>
+                    <a href="#" class="forgot">Forgot your password?</a>
+                    <button id="signInBtn">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container" id="overlayCon">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button>Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <button id="overlayBtn"></button>
+            </div>
+        </div>
+    </template>
+
+    <script src="../js/form.js"></script>
+    <script src="../js/FAJAX.js"></script>
+    <script src="../js/client.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/network.js"></script>
+    <script src="../js/server1.js"></script>
+    <script src="../js/server2.js"></script>
+    <script src="../js/data-base.js"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
